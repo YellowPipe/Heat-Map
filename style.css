@@ -1,6 +1,6 @@
 body {
 	margin: 0 auto;
-	background-color: grey; 
+	background-color: #e8e8e8; 
 }
 
 .white {
@@ -9,12 +9,14 @@ body {
 
 /*--------------------------------nav bar start--------------------------------*/
 nav {
+	margin-top: 0;
 	height: 150px;
 	width: 100%;
-	background-color: grey;
+	background-color: #1f1f1f;
 }
 
 .nav-items {
+	margin-top: 0;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -27,17 +29,34 @@ nav {
 	font-size: 2em;
 }
 
+button {
+	font-size: 0.9em;
+	padding: 5px 10px;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	border-radius: 10px
+}
+
 
 /*--------------------------------nav bar end--------------------------------*/
 
 /*--------------------------------main section start--------------------------------*/
-.tc {
+.center-content {
 	display: flex;
 	justify-content: center;
 }
 
 .under-header h1{
-	margin-bottom: -1000px; 
+	margin-bottom: -1000px;
+	width: 350px; 
+	text-align: center;
+	z-index: 1
+}
+
+.under-header span{
+	background-color: black;
+	padding: 5px 10px
 }
 
 .big-articles-container {
@@ -45,11 +64,32 @@ nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	background-color: green;
 }
 
 .big-article {
-	border: 5px solid black;
+	font-size: 1.8em;
+	color: #504e4e;
+}
+
+.big-article h1{
+	margin-top: 150px
+}
+
+.tc  {
+	text-align: center;
+}
+
+
+.grey1 {
+	background-color: #dedede;
+}
+
+.grey0 {
+	background-color: #e8e8e8;
+}
+
+.grey2 {
+	background-color: #d6d6d6;
 }
 
 /*--------------------------------main section end--------------------------------*/
@@ -60,19 +100,99 @@ nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 95%;
-	margin: 0 auto
+	margin: 0 auto;
+	grid-gap: 5px;
 }
 
 .small-article {
-	border: 2px solid black;
 	height: 600px;
+	background-color: #bbbbbb;
+	font-size: 1.4em;
+	line-height: 1.7em;
+	text-align: center;
+
+}
+
+.small-article h2 {
+	color: #424141
+}
+
+.small-article p{
+	color: #504e4e;
+}
+
+
+.small-article ul{
+	color: #504e4e;
+	list-style: none;
 }
 
 .explore-more {
 	grid-column: span 2;
-	background-color: red;
+	background-color: #272727;
 }
 
 
-
 /*--------------------------------smaller articles end--------------------------------*/
+
+.conference {
+	height: 1000px;
+	width: 100%;
+	background-color: #a2a2a2;
+	font-size: 2em;
+	text-align: center;
+}
+
+.conference p{
+	padding: 100px
+}
+
+/*--------------------------------shares start--------------------------------*/
+.person-of-week {
+	height: 400px;
+	background-color: #cccccc;
+	color: #504e4e;
+	font-size: 1.3em;
+}
+
+.shares {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	height: 1000px;
+}
+
+.tweet {
+	background-color: #bbbbbb;
+	font-size: 1.1em;
+	line-height: 1.3em
+}
+
+.tweet h2 {
+	color: #504e4e;
+}
+
+.tweet p {
+	color: grey;
+}
+
+
+/*--------------------------------shares end--------------------------------*/
+
+.book {
+	height: 500px;
+	background-color: #272727;
+	color: #e0dddd;
+	font-size: 1.4em;
+	
+}
+
+.book h1 {
+	padding: 100px
+}
+
+footer {
+	height: 500px;
+	background-color: #3e3e3e;
+}
